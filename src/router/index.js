@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import GuestPage from '@/pages/GuestPage';
+import WelcomePage from '@/pages/WelcomePage';
 import HomePage from '@/pages/HomePage';
 
 const routes = [
   {
     path: '/',
-    component: GuestPage,
+    component: WelcomePage,
   },
   {
     path: '/home',
