@@ -1,6 +1,6 @@
 <template>
   <router-view />
-  <fa icon="coffee" />
+  <fa class="text-blue-500 text-9xl" :icon="['fab', 'twitter']" />
 </template>
 
 <script>
