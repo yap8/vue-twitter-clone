@@ -1,9 +1,9 @@
 <template>
-  <aside class="p-2 h-screen border-r">
+  <aside class="flex flex-col p-2 h-screen border-r">
     <SidebarHeader />
     <SidebarNav />
     <AppButton variant="filled">Tweet</AppButton>
-    <SidebarProfile />
+    <SidebarProfile class="mt-auto" />
   </aside>
 </template>
 
