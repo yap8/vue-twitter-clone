@@ -1,8 +1,16 @@
 <template>
   <div class="flex">
     <!-- left col -->
-    <div class="w-1/2">
-      <fa class="text-9xl" :icon="['fab', 'twitter']" />
+    <div class="flex items-center justify-center w-1/2">
+      <img
+        class="h-screen object-cover"
+        src="images/welcome.png"
+        alt="Welcome background"
+      />
+      <fa
+        class="text-white text-9xl absolute shadow"
+        :icon="['fab', 'twitter']"
+      />
     </div>
     <!-- right col -->
     <div class="w-1/2"></div>
