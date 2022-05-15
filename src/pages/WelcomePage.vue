@@ -15,17 +15,28 @@
     <!-- right col -->
     <div class="flex flex-col w-1/2 p-10">
       <fa
-        class="text-blue-500 text-5xl mr-auto mb-16"
+        class="text-blue-400 text-5xl mr-auto mb-16"
         :icon="['fab', 'twitter']"
       />
       <h1 class="text-8xl font-bold mb-16">Happening now</h1>
       <h2 class="text-5xl font-bold">Join Twitter today.</h2>
+      <!-- buttons -->
+      <div>
+        <AppButton variant="filled">Sign up with email</AppButton>
+        <AppButton variant="outlined">Sign in</AppButton>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import AppButton from '@/components/UI/AppButton';
+
+export default {
+  components: {
+    AppButton,
+  },
+};
 </script>
 
 <style></style>
