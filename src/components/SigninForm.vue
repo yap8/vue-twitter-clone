@@ -3,12 +3,19 @@
     Create your account
   </h2>
   <form class="max-w-md m-auto">
-    <AppInput class="mb-4" type="email" name="email" />
-    <AppInput class="mb-4" type="password" name="password" />
+    <AppInput class="mb-4" type="email" name="email" v-model="email" />
+    <AppInput class="mb-4" type="password" name="password" v-model="password" />
     <AppButton class="m-auto" variant="filled">Sign in</AppButton>
   </form>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      email: '',
+      password: '',
+    };
+  },
+};
 </script>

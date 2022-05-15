@@ -9,6 +9,8 @@
       :id="name"
       :name="name"
       :placeholder="name.charAt(0).toUpperCase() + name.slice(1)"
+      :value="modelValue"
+      @input="handleInput"
     />
   </div>
 </template>
@@ -24,6 +26,12 @@ export default {
     name: {
       type: String,
       required: true,
+    },
+    modelValue: [String, Number],
+  },
+  methods: {
+    handleInput(event) {
+      this.$emit('update:modelValue', event.target.value);
     },
   },
 };
