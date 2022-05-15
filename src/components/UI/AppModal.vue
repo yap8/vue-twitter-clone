@@ -4,9 +4,9 @@
     v-if="open === true"
     @click.self="$emit('close')"
   >
-    <div class="w-full max-w-2xl bg-white p-3 pb-5 rounded-3xl">
+    <div class="w-full max-w-2xl bg-white p-3 pb-8 rounded-3xl">
       <!-- header -->
-      <header class="flex items-center relative">
+      <header class="flex items-center relative mb-8">
         <AppButton class="w-auto" @click="$emit('close')">
           <fa class="h-6 w-6" icon="times" />
         </AppButton>
