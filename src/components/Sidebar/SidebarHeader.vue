@@ -1,5 +1,5 @@
 <template>
-  <header class="h-12">
+  <header class="h-12 mb-2">
     <AppButton class="w-auto">
       <router-link to="/home">
         <fa class="w-8 text-blue-400" :icon="['fab', 'twitter']" />
