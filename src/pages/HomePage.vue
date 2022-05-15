@@ -1,9 +1,13 @@
 <template>
-  <h1>HOME</h1>
+  <Sidebar class="max-w-md" />
 </template>
 
 <script>
-export default {};
+import Sidebar from '@/components/Sidebar';
+
+export default {
+  components: { Sidebar },
+};
 </script>
 
 <style></style>

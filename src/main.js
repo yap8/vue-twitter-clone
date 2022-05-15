@@ -1,7 +1,12 @@
 import { createApp } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import {
+  faTimes,
+  faHome,
+  faUser,
+  faCog,
+} from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import router from './router';
@@ -13,7 +18,7 @@ import './index.css';
 const app = createApp(App);
 
 // importing components
-library.add(faTimes, faTwitter);
+library.add(faTimes, faTwitter, faHome, faUser, faCog);
 app.component('fa', FontAwesomeIcon);
 
 components.forEach((component) => app.component(component.name, component));
