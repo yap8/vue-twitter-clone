@@ -1,6 +1,6 @@
 <template>
   <h2 class="max-w-md m-auto mb-6 text-3xl font-semibold">
-    Create your account
+    Sign in to Twitter
   </h2>
   <form class="max-w-md m-auto" @submit.prevent="handleSubmit">
     <AppInput class="mb-4" type="email" name="email" v-model="email" />
