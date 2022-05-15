@@ -22,11 +22,16 @@
       />
       <h1 class="text-8xl font-bold mb-16">Happening now</h1>
       <h2 class="text-5xl font-bold mb-10">Join Twitter today.</h2>
-      <AppButton class="max-w-sm mb-20" variant="filled"
+      <AppButton
+        class="max-w-sm mb-20"
+        variant="filled"
+        @click="signupOpen = true"
         >Sign up with email</AppButton
       >
       <h3 class="text-2xl font-semibold mb-4">Already have an account?</h3>
-      <AppButton class="max-w-sm" variant="outlined">Sign in</AppButton>
+      <AppButton class="max-w-sm" variant="outlined" @click="signinOpen = true"
+        >Sign in</AppButton
+      >
     </div>
   </div>
 </template>
