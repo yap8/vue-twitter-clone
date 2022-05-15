@@ -30,13 +30,7 @@
 </template>
 
 <script>
-import AppButton from '@/components/UI/AppButton';
-
-export default {
-  components: {
-    AppButton,
-  },
-};
+export default {};
 </script>
 
 <style></style>

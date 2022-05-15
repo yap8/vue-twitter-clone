@@ -7,10 +7,19 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import router from './router';
 import App from './App.vue';
 import store from './store';
+import components from '@/components/UI';
 import './index.css';
-
-library.add(faCoffee, faTwitter);
 
 const app = createApp(App);
 
-app.component('fa', FontAwesomeIcon).use(store).use(router).mount('#app');
+// importing components
+library.add(faCoffee, faTwitter);
+app.component('fa', FontAwesomeIcon);
+
+components.forEach((component) => app.component(component.name, component));
+
+// adding vuex and router
+app.use(store).use(router);
+
+// initializing
+app.mount('#app');
