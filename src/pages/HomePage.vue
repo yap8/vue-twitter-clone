@@ -1,5 +1,7 @@
 <template>
-  <Sidebar class="max-w-md" />
+  <div class="container mx-auto">
+    <Sidebar class="max-w-md" />
+  </div>
 </template>
 
 <script>
