@@ -1,6 +1,6 @@
 <template>
-  <AppModal :open="signinOpen">SIGNIN</AppModal>
-  <AppModal :open="signupOpen">SIGNUP</AppModal>
+  <AppModal :open="signinOpen" @close="signinOpen = false">SIGNIN</AppModal>
+  <AppModal :open="signupOpen" @close="signupOpen = false">SIGNUP</AppModal>
   <div class="flex">
     <!-- left col -->
     <div class="flex items-center justify-center w-1/2">
