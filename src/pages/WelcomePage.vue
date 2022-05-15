@@ -1,4 +1,6 @@
 <template>
+  <AppModal :open="signinOpen">SIGNIN</AppModal>
+  <AppModal :open="signupOpen">SIGNUP</AppModal>
   <div class="flex">
     <!-- left col -->
     <div class="flex items-center justify-center w-1/2">
@@ -30,7 +32,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      signupOpen: false,
+      signinOpen: false,
+    };
+  },
+};
 </script>
 
 <style></style>
